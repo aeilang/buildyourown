@@ -1,6 +1,8 @@
 package main
 
-import "os"
+import (
+	"os"
+)
 
 func main() {
 	wc, close := NewMyWc()
@@ -9,3 +11,8 @@ func main() {
 	wc.SetDefaultCmd()
 	wc.WriteTo(os.Stdout)
 }
+
+
+
+
+
